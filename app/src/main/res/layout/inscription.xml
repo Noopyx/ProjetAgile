@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/newlogin"
+        android:singleLine="true"
+        android:hint="Votre login"
+        android:background="#ffffff"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/mdp"
+        android:background="#ffffff"
+        android:hint="Mot de passe"
+        android:layout_below="@+id/newlogin"
+        android:layout_alignLeft="@+id/newlogin"
+        android:layout_alignStart="@+id/newlogin"
+        android:layout_marginTop="87dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/mdp2"
+        android:background="#ffffff"
+        android:hint="Retapez le mdp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/mdp"
+        android:layout_alignStart="@+id/mdp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:text="Création de compte"
+        android:id="@+id/textView"
+        android:textColor="#070d52"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#c5bcbc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:id="@+id/button"
+        android:onClick="retourAcceuil"
+        android:background="#4cbddf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:id="@+id/button2"
+        android:onClick="validation"
+        android:background="#4cbddf"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
